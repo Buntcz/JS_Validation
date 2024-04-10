@@ -1,0 +1,9 @@
+input :valid {
+    border: 2px solid green;
+    color: green;
+}
+
+input :invalid {
+    border: 2px solid red;
+    color: red;
+}

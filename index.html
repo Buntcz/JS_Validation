@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Validation_Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <p id="emailP">
+   <label for="mail">
+    <span>Please enter email address:</span>
+    <input type="email" id="mail" minlength="8" required />
+    <span class="error" aria-live="polite"></span>
+   </label>
+   </p>
+<p>
+    <label for="ZIP">ZIP: </label>
+    <input type="text" id="ZIP" required  />
+    <label for="country">Country: </label>
+    <select id="country" autocomplete="on">
+        <option value="ch">Switzerland</option>
+        <option value="bg">Bulgaria</option>
+    </select>
+</p>
+<p>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" required/>
+    <label for="confirmPass">Confirm Password</label>
+    <input type="password" id="confirmPass" required>
+    <span class="matchPass"></span>
+</p>
+<button class="button">Submit</button>
+    </form>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
